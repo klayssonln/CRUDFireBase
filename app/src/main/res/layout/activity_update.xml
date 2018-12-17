@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".UpdateActivity">
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="33dp"
+    android:text="Update User"
+    android:textSize="30sp" />
+
+<TextView
+    android:id="@+id/textUpName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="33dp"
+    android:layout_marginLeft="33dp"
+    android:layout_marginTop="114dp"
+    android:text="Name:" />
+
+<TextView
+    android:id="@+id/textUpSex"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/textUpName"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="215dp"
+    android:text="Sex:" />
+
+<TextView
+    android:id="@+id/textUpAge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/textUpName"
+    android:layout_alignParentBottom="true"
+    android:layout_marginStart="2dp"
+    android:layout_marginBottom="209dp"
+    android:text="Age:" />
+
+    <RadioGroup
+        android:id="@+id/groupUpId"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignBottom="@+id/textUpSex"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/buttonUpMascId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="M" />
+
+        <RadioButton
+            android:id="@+id/buttonUpFemId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="F" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonUpId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:text="Save" />
+
+    <EditText
+        android:id="@+id/nameUpId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignBottom="@+id/textUpName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="false" />
+
+    <EditText
+        android:id="@+id/ageUpId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignBottom="@+id/textUpAge"
+        android:layout_marginStart="-1dp"
+        android:layout_marginBottom="-3dp"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textUpLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textUpName"
+        android:layout_alignBottom="@+id/lastNameUpId"
+        android:text="Lastname:" />
+
+<EditText
+    android:id="@+id/lastNameUpId"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignStart="@+id/textView"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="0dp"
+    android:layout_marginTop="141dp"
+    android:ems="10"
+    android:inputType="textPersonName" />
+
+</RelativeLayout>

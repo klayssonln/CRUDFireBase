@@ -38,7 +38,7 @@ public class NewUserActivity extends AppCompatActivity {
             button = (Button) findViewById(R.id.buttonId);
             group = (RadioGroup) findViewById(R.id.groupId); //Sex
             name = (EditText) findViewById(R.id.nameId);
-            lastName = (EditText) findViewById(R.id.lastNameId);
+            lastName = (EditText) findViewById(R.id.lastNameUpId);
             age = (EditText) findViewById(R.id.ageId);
 
             final SharedPreferences sharedPreferences = getSharedPreferences(SHARED_PREFERENCES, 0);
@@ -79,7 +79,7 @@ public class NewUserActivity extends AppCompatActivity {
 
                         index++;
                         userReference.child(currentIndex).setValue(user);
-                        Toast.makeText(getApplicationContext(),"User on FireBase.", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(),"User on FireBase.", Toast.LENGTH_SHORT).show();
 
                         editor.putInt("index", index);
                         editor.commit();

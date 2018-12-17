@@ -17,7 +17,7 @@
         android:textSize="30sp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textUpName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -29,20 +29,20 @@
         android:text="Name:" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textUpSex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView2"
+        android:layout_alignStart="@+id/textUpName"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
         android:layout_marginTop="215dp"
         android:text="Sex:" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textUpAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView2"
+        android:layout_alignStart="@+id/textUpName"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="2dp"
         android:layout_marginBottom="209dp"
@@ -53,7 +53,7 @@
         android:layout_width="203dp"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView"
-        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignBottom="@+id/textUpSex"
         android:orientation="horizontal">
 
         <RadioButton
@@ -85,7 +85,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView"
-        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignBottom="@+id/textUpName"
         android:ems="10"
         android:inputType="textPersonName"
         android:selectAllOnFocus="false" />
@@ -95,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView"
-        android:layout_alignBottom="@+id/textView6"
+        android:layout_alignBottom="@+id/textUpAge"
         android:layout_marginStart="-1dp"
         android:layout_marginBottom="-3dp"
         android:ems="10"
@@ -105,12 +105,12 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_alignBottom="@+id/lastNameId"
+        android:layout_alignStart="@+id/textUpName"
+        android:layout_alignBottom="@+id/lastNameUpId"
         android:text="Lastname:" />
 
     <EditText
-        android:id="@+id/lastNameId"
+        android:id="@+id/lastNameUpId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView"
